@@ -86,6 +86,8 @@ export const SCREENS = [
     accent: '#ff2d9b',
     accent2: '#ffb238',
     fallback: ['#3d1259', '#d61f6e', '#f97316'],
+    // tuned from the real hero artwork — face/upper body sits upper-right
+    mobilePosition: '68% 18%',
     counts: false
   },
   {
@@ -94,9 +96,10 @@ export const SCREENS = [
     frame: '/frames/02-about.avif',
     objective: 'Learn what<br>I build and why',
     map: [30, 62],
-    accent: '#e08b3c',
+    accent: '#ea8633', // sampled from real artwork
     accent2: '#4fb6c9',
     fallback: ['#8fc7d9', '#f2d7a8', '#ffe9c4'],
+    mobilePosition: '69% 18%', // tuned — character sits upper-right
     counts: true
   },
   {
@@ -105,9 +108,10 @@ export const SCREENS = [
     frame: '/frames/03-skills.avif',
     objective: 'Review the stack<br>I build with',
     map: [46, 26],
-    accent: '#7fb2d9',
+    accent: '#7fb2d9', // already matched the real artwork's storm-blue palette
     accent2: '#ffb238',
     fallback: ['#101823', '#2b3d52', '#5b7183'],
+    mobilePosition: '76% 26%', // tuned — character sits right, mid-height
     counts: true
   },
   {
@@ -116,9 +120,10 @@ export const SCREENS = [
     frame: '/frames/04-projects.avif',
     objective: 'Inspect the<br>systems I have built',
     map: [58, 40],
-    accent: '#0fbfb2',
-    accent2: '#ff7fb0',
+    accent: '#0b72c5', // sampled from real artwork — a clean blue, not teal
+    accent2: '#a8d4f0', // pale sky highlight, sampled from the same scene
     fallback: ['#1fb6e8', '#5fe0d8', '#f7e6c8'],
+    mobilePosition: '74% 28%', // tuned — character sits right, mid-height
     counts: true
   },
   {
@@ -127,9 +132,10 @@ export const SCREENS = [
     frame: '/frames/05-experience.avif',
     objective: 'Trace how I<br>build through practice',
     map: [72, 54],
-    accent: '#9b8cff',
+    accent: '#f38728', // sampled from real artwork — warm sunset orange, not purple
     accent2: '#ffa83c',
     fallback: ['#1a1246', '#4b3d8f', '#c86a4a'],
+    mobilePosition: '73% 28%', // tuned — character sits right, mid-height
     counts: true
   },
   {
@@ -138,9 +144,10 @@ export const SCREENS = [
     frame: '/frames/06-achievements.avif',
     objective: 'Collect what<br>has shipped so far',
     map: [66, 78],
-    accent: '#ff2d9b',
+    accent: '#8b5cf6', // sampled from real artwork — deep violet, not magenta-pink
     accent2: '#24e0e0',
     fallback: ['#2a0b3d', '#a01f7a', '#ff3d7a'],
+    mobilePosition: '74% 20%', // tuned — character sits upper-right
     counts: true
   },
   {
@@ -149,9 +156,10 @@ export const SCREENS = [
     frame: '/frames/07-services.avif',
     objective: 'See what I<br>can build for you',
     map: [38, 84],
-    accent: '#e8806e',
-    accent2: '#1fa8d8',
+    accent: '#5865c9', // sampled from real artwork — deep indigo-blue night
+    accent2: '#d97a8c', // muted rose/coral highlight, sampled from the same scene
     fallback: ['#22a8e8', '#8fd8f0', '#f0dcc4'],
+    mobilePosition: '70% 35%', // tuned — character sits right, seated mid-frame
     counts: true
   },
   {
@@ -160,9 +168,10 @@ export const SCREENS = [
     frame: '/frames/08-contact.avif',
     objective: 'Open a line<br>of contact',
     map: [82, 34],
-    accent: '#6ea8ff',
-    accent2: '#ffb238',
+    accent: '#ea7f30', // sampled from real artwork — warm sunset orange, not blue
+    accent2: '#7c6fc9', // cool violet highlight from the upper sky, sampled
     fallback: ['#05060f', '#141a2e', '#2e2438'],
+    mobilePosition: '55% 26%', // tuned — character sits closer to center than others
     counts: true
   },
   {
@@ -171,9 +180,10 @@ export const SCREENS = [
     frame: '/frames/09-outro.avif',
     objective: 'Keep building<br>real things',
     map: [88, 88],
-    accent: '#ffa3bd',
-    accent2: '#ffd9a8',
+    accent: '#d9634e', // sampled from real artwork — warm terracotta dusk
+    accent2: '#8a6bb0', // soft violet highlight from the sky, sampled
     fallback: ['#8f9fd8', '#f2b8c6', '#ffd9a8'],
+    mobilePosition: '70% 22%', // tuned — character stands right, upper-frame
     counts: false
   }
 ];
@@ -378,7 +388,7 @@ export const CONTACT = {
     { icon: 'GH', label: 'GitHub',    value: '@stratonflorentin-dot', url: 'https://github.com/stratonflorentin-dot' },
     { icon: 'WA', label: 'WhatsApp',  value: '+255 775 690 768', url: 'https://wa.me/255775690768' },
     { icon: '◎',  label: 'Instagram', value: '@teshier6', url: 'https://www.instagram.com/teshier6' },
-    { icon: '✉',  label: 'Email',     value: 'Add in site.config.js', url: '' },
+    { icon: '✉',  label: 'Email',     value: 'stratonflorentin@gmail.com', url: 'mailto:stratonflorentin@gmail.com' },
     { icon: 'in', label: 'LinkedIn',  value: 'Add in site.config.js', url: '' }
   ],
 

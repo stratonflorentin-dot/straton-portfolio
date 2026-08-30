@@ -10,6 +10,10 @@ import { SITE } from '../config/site.config.js';
       <div class="bar-wrap"><div class="bar-fill" id="xp-bar"></div></div>
       <div class="stars" id="stars"></div>
     </div>
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="Toggle background music" aria-pressed="true">
+      <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="music-label" id="music-label">MUSIC<br />ON</span>
+    </button>
     <div class="hud-id">
       <div class="hud-avatar">{SITE.avatarLetter}</div>
       <div class="hud-screen-count" id="screen-count">01 / 09</div>
@@ -40,6 +44,14 @@ import { SITE } from '../config/site.config.js';
   </div>
 
   <div class="backhint" id="backhint">Esc — Back to menu</div>
+
+  <nav class="mnav" id="mnav" aria-label="Screen navigation">
+    <button class="mnav-btn" id="mnav-prev" type="button" aria-label="Previous screen">&#8249;</button>
+    <button class="mnav-home" id="mnav-home" type="button" aria-label="Back to menu">
+      <span class="screen-count" id="mnav-count">01 / 09</span>
+    </button>
+    <button class="mnav-btn" id="mnav-next" type="button" aria-label="Next screen">&#8250;</button>
+  </nav>
 </div>
 
 <div class="toast" id="toast">
