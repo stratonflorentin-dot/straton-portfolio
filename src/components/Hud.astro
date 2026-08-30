@@ -1,0 +1,49 @@
+---
+import { SITE } from '../config/site.config.js';
+---
+<div class="hud">
+  <div class="hud-tr">
+    <div class="hud-stats">
+      <div class="hud-num hud-clock" id="clock">00:00</div>
+      <div class="hud-num hud-money" id="money">$0</div>
+      <div class="hud-num hud-health"><span class="heart">&hearts;</span><span>100</span></div>
+      <div class="bar-wrap"><div class="bar-fill" id="xp-bar"></div></div>
+      <div class="stars" id="stars"></div>
+    </div>
+    <div class="hud-id">
+      <div class="hud-avatar">{SITE.avatarLetter}</div>
+      <div class="hud-screen-count" id="screen-count">01 / 09</div>
+    </div>
+  </div>
+
+  <div class="minimap">
+    <div class="roads"></div>
+    <div class="water"></div>
+    <div class="blip" id="blip" style="left:22%;top:70%"></div>
+    <div class="compass">N</div>
+  </div>
+
+  <div class="objective">
+    <div class="obj-label">Current Objective</div>
+    <div class="obj-text" id="objective"></div>
+  </div>
+
+  <div class="quote">
+    {SITE.quoteLine1}<br />{SITE.quoteLine2}
+    <span>— {SITE.quoteAuthor}</span>
+  </div>
+
+  <div class="tagline">
+    {SITE.tagline.map((t, i) => (
+      <>{i > 0 && <i>&bull;</i>}{t}</>
+    ))}
+  </div>
+
+  <div class="backhint" id="backhint">Esc — Back to menu</div>
+</div>
+
+<div class="toast" id="toast">
+  <div class="toast-t">Section<br />Unlocked</div>
+  <div class="toast-s">Progress +</div>
+  <div class="toast-c" id="toast-cash">+$150,000</div>
+</div>

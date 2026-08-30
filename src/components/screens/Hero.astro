@@ -1,0 +1,15 @@
+---
+import { SITE } from '../../config/site.config.js';
+---
+<section class="screen" data-s="hero">
+  <div class="title-block">
+    <div class="gta-title anim" set:html={`${SITE.titleLine1}<br />${SITE.titleLine2}`} />
+    <div class="gta-sub anim">{SITE.subtitle}</div>
+  </div>
+  <nav class="menu" id="menu">
+    <div class="menu-hl" id="menu-hl"></div>
+  </nav>
+  <a class="hero-gh anim" href="https://github.com/stratonflorentin-dot" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile">
+    View GitHub <span>&#8599;</span>
+  </a>
+</section>

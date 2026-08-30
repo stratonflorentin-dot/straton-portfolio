@@ -1,0 +1,23 @@
+---
+import { ACHIEVEMENTS } from '../../config/site.config.js';
+---
+<section class="screen" data-s="achievements">
+  <div class="title-block">
+    <div class="gta-title sm anim">{ACHIEVEMENTS.title}</div>
+    <div class="gta-sub anim">{ACHIEVEMENTS.subtitle}</div>
+  </div>
+  <div class="panel">
+    {ACHIEVEMENTS.list.map((a) => (
+      <div class="card anim">
+        <div class="card-ico">{a.icon}</div>
+        <div>
+          <div class="card-t">{a.name}</div>
+          <div class="card-s">{a.description}</div>
+        </div>
+      </div>
+    ))}
+    <div class="btn anim" data-go={ACHIEVEMENTS.button.goesTo}>
+      {ACHIEVEMENTS.button.text} <span>&rsaquo;</span>
+    </div>
+  </div>
+</section>

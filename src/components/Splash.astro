@@ -1,0 +1,15 @@
+---
+import { SITE } from '../config/site.config.js';
+---
+<div class="splash" id="splash">
+  <div class="splash-in">
+    <div class="splash-kicker">Now Loading</div>
+    <div class="splash-title" set:html={`${SITE.titleLine1} ${SITE.titleLine2}`} />
+    <div class="splash-sub">{SITE.subtitle}</div>
+    <div class="splash-bar"><div class="splash-fill" id="splash-fill"></div></div>
+    <div class="splash-tips">
+      <span id="splash-tip">Press Tab at any time to view the tech stack.</span>
+      <span class="splash-pct" id="splash-pct">0%</span>
+    </div>
+  </div>
+</div>

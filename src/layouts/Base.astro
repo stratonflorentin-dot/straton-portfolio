@@ -1,0 +1,26 @@
+---
+import '../styles/global.css';
+import { SITE, SCREENS } from '../config/site.config.js';
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{SITE.metaTitle}</title>
+  <meta name="description" content={SITE.metaDescription} />
+
+  <meta property="og:title" content={SITE.metaTitle} />
+  <meta property="og:description" content={SITE.metaDescription} />
+  <meta property="og:image" content={SCREENS[0].frame} />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href={SCREENS[0].frame} />
+</head>
+<body>
+  <slot />
+</body>
+</html>

@@ -1,0 +1,22 @@
+ARCADE PORTFOLIO TEMPLATE — LICENCE
+════════════════════════════════════
+
+YOU MAY
+  • Use this template for your own portfolio
+  • Use it for unlimited client projects
+  • Modify anything, including the code and design
+  • Deploy commercially
+
+YOU MAY NOT
+  • Resell or redistribute the template itself
+  • Include it in another template, theme or bundle for sale
+  • Claim authorship of the original template
+
+NO WARRANTY
+  Provided as-is. No liability for anything arising from its use.
+
+DESIGN NOTE
+  This template is inspired by arcade and console pause-menu
+  interfaces as a general design language. It is not affiliated
+  with, endorsed by, or connected to any game, studio or publisher.
+  Any art, names or branding you add are your own responsibility.

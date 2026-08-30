@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import Splash from '../components/Splash.astro';
+import Hud from '../components/Hud.astro';
+import TechWheel from '../components/TechWheel.astro';
+
+import Hero from '../components/screens/Hero.astro';
+import About from '../components/screens/About.astro';
+import Skills from '../components/screens/Skills.astro';
+import Projects from '../components/screens/Projects.astro';
+import Experience from '../components/screens/Experience.astro';
+import Achievements from '../components/screens/Achievements.astro';
+import Services from '../components/screens/Services.astro';
+import Contact from '../components/screens/Contact.astro';
+import Outro from '../components/screens/Outro.astro';
+
+import { SCREENS, SETTINGS } from '../config/site.config.js';
+---
+
+<Base>
+  <Splash />
+
+  <main class="stage" id="stage" data-screen="hero">
+    <div class="plates">
+      {SCREENS.map((s) => (
+        <div
+          class="plate"
+          data-id={s.id}
+          data-src={s.frame}
+          data-missing="true"
+          data-label={`${s.label} — add ${s.frame.split('/').pop()}`}
+          style={`--f0:${s.fallback[0]};--f1:${s.fallback[1]};--f2:${s.fallback[2]}`}
+        />
+      ))}
+    </div>
+
+    <div class="scrim"></div>
+    <div class="scrim top"></div>
+    <div class="scrim corner"></div>
+
+    <Hero />
+    <About />
+    <Skills />
+    <Projects />
+    <Experience />
+    <Achievements />
+    <Services />
+    <Contact />
+    <Outro />
+
+    <Hud />
+    <TechWheel />
+  </main>
+
+  {SETTINGS.showKeyHints && (
+    <div class="keys">
+      <span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span>
+      <span><kbd>Enter</kbd> select</span>
+      <span><kbd>&larr;</kbd><kbd>&rarr;</kbd> browse</span>
+      <span><kbd>1</kbd>&ndash;<kbd>9</kbd> jump</span>
+      <span><kbd>Esc</kbd> back</span>
+      <span><kbd>Tab</kbd> stack</span>
+    </div>
+  )}
+</Base>
+
+<script>
+  import { initApp } from '../scripts/app.js';
+  initApp();
+</script>

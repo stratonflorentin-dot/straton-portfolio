@@ -1,0 +1,28 @@
+---
+import { CONTACT } from '../../config/site.config.js';
+---
+<section class="screen" data-s="contact">
+  <div class="title-block">
+    <div class="gta-title sm anim">{CONTACT.title}</div>
+    <div class="gta-sub anim">{CONTACT.subtitle}</div>
+  </div>
+  <div class="panel">
+    {CONTACT.links.map((l) => (
+      <a
+        class="cx anim"
+        href={l.url || undefined}
+        target={l.url && !l.url.startsWith('mailto') ? '_blank' : undefined}
+        rel={l.url ? 'noopener noreferrer' : undefined}
+      >
+        <div class="cx-ico">{l.icon}</div>
+        <div>
+          <div class="cx-l">{l.label}</div>
+          <div class="cx-v">{l.value}</div>
+        </div>
+      </a>
+    ))}
+    <div class="btn anim" data-go={CONTACT.button.goesTo}>
+      {CONTACT.button.text} <span>&rsaquo;</span>
+    </div>
+  </div>
+</section>

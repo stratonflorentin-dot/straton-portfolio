@@ -1,0 +1,40 @@
+---
+import { PROJECTS } from '../../config/site.config.js';
+---
+<section class="screen" data-s="projects">
+  <div class="title-block">
+    <div class="gta-title sm anim">{PROJECTS.title}</div>
+    <div class="gta-sub anim">{PROJECTS.subtitle}</div>
+  </div>
+  <div class="panel wide projects-panel">
+    {PROJECTS.featured.map((p) => (
+      <a class="card hot featured-card anim" href={p.github} target="_blank" rel="noopener noreferrer">
+        <div class="card-ico">{p.icon}</div>
+        <div>
+          <div class="card-cat">{p.category}</div>
+          <div class="card-t">{p.name}</div>
+          <div class="card-s">{p.description}</div>
+          <div class="tech-tags">
+            {p.tech.map((t) => <span class="tech-tag">{t}</span>)}
+          </div>
+        </div>
+      </a>
+    ))}
+
+    <div class="projects-grid">
+      {PROJECTS.more.map((p) => (
+        <a class="card compact anim" href={p.github} target="_blank" rel="noopener noreferrer">
+          <div class="card-ico">{p.icon}</div>
+          <div>
+            <div class="card-cat">{p.category}</div>
+            <div class="card-t">{p.name}</div>
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <div class="btn anim" data-go={PROJECTS.button.goesTo}>
+      {PROJECTS.button.text} <span>&rsaquo;</span>
+    </div>
+  </div>
+</section>

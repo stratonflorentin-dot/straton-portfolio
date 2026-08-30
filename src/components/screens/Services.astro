@@ -1,0 +1,23 @@
+---
+import { SERVICES } from '../../config/site.config.js';
+---
+<section class="screen" data-s="services">
+  <div class="title-block">
+    <div class="gta-title sm anim" set:html={`${SERVICES.titleLine1}<br />${SERVICES.titleLine2}`} />
+    <div class="gta-sub anim">{SERVICES.subtitle}</div>
+  </div>
+  <div class="panel low">
+    <p class="body-text anim">{SERVICES.intro}</p>
+    <div class="stat-row anim">
+      {SERVICES.stats.map((s) => (
+        <div class="stat"><b>{s.number}</b><span>{s.label}</span></div>
+      ))}
+    </div>
+    <div class="chip-row anim">
+      {SERVICES.list.map((s) => <span class="chip">{s.name}</span>)}
+    </div>
+    <div class="btn anim" data-go={SERVICES.button.goesTo}>
+      {SERVICES.button.text} <span>&rsaquo;</span>
+    </div>
+  </div>
+</section>

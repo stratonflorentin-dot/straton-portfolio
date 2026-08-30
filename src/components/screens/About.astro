@@ -1,0 +1,24 @@
+---
+import { ABOUT } from '../../config/site.config.js';
+---
+<section class="screen" data-s="about">
+  <div class="title-block">
+    <div class="gta-title sm anim">{ABOUT.title}</div>
+    <div class="gta-sub anim">{ABOUT.subtitle}</div>
+  </div>
+  <div class="panel">
+    <p class="body-text anim">{ABOUT.intro}</p>
+    {ABOUT.cards.map((c) => (
+      <div class="card anim">
+        <div class="card-ico">{c.icon}</div>
+        <div>
+          <div class="card-t">{c.label}</div>
+          <div class="card-s">{c.value}</div>
+        </div>
+      </div>
+    ))}
+    <div class="btn anim" data-go={ABOUT.button.goesTo}>
+      {ABOUT.button.text} <span>&rsaquo;</span>
+    </div>
+  </div>
+</section>

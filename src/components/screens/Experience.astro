@@ -1,0 +1,20 @@
+---
+import { EXPERIENCE } from '../../config/site.config.js';
+---
+<section class="screen" data-s="experience">
+  <div class="title-block">
+    <div class="gta-title sm anim">{EXPERIENCE.title}</div>
+    <div class="gta-sub anim">{EXPERIENCE.subtitle}</div>
+  </div>
+  <div class="panel">
+    <div class="tl">
+      {EXPERIENCE.timeline.map((t) => (
+        <div class="tl-item anim">
+          <div class="tl-y">{t.period}</div>
+          <div class="tl-h">{t.role}</div>
+          <div class="tl-b">{t.description}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

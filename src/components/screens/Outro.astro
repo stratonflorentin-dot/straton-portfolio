@@ -1,0 +1,16 @@
+---
+import { OUTRO } from '../../config/site.config.js';
+---
+<section class="screen" data-s="outro">
+  <div class="outro">
+    <div>
+      <div class="outro-kicker anim">{OUTRO.kicker}</div>
+      <div class="gta-title anim" set:html={`${OUTRO.titleLine1}<br />${OUTRO.titleLine2}`} />
+      <div class="gta-sub anim">{OUTRO.subtitle}</div>
+      <p class="body-text outro-closing anim">{OUTRO.closing}</p>
+      <div class="btn anim" data-go={OUTRO.button.goesTo}>
+        {OUTRO.button.text} <span>&rsaquo;</span>
+      </div>
+    </div>
+  </div>
+</section>

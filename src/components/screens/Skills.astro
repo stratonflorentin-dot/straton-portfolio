@@ -1,0 +1,18 @@
+---
+import { SKILLS } from '../../config/site.config.js';
+---
+<section class="screen" data-s="skills">
+  <div class="title-block">
+    <div class="gta-title sm anim">{SKILLS.title}</div>
+    <div class="gta-sub anim">{SKILLS.subtitle}</div>
+  </div>
+  <div class="panel wide">
+    {SKILLS.list.map((s) => (
+      <div class="skill-row anim">
+        <div class="skill-n">{s.name}</div>
+        <div class="skill-t"><div class="skill-f" data-v={s.value}></div></div>
+        <div class="skill-p">{s.value}%</div>
+      </div>
+    ))}
+  </div>
+</section>
