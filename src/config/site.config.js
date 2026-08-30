@@ -376,9 +376,10 @@ export const CONTACT = {
   // url makes the row clickable. Leave '' for plain text.
   links: [
     { icon: 'GH', label: 'GitHub',    value: '@stratonflorentin-dot', url: 'https://github.com/stratonflorentin-dot' },
+    { icon: 'WA', label: 'WhatsApp',  value: '+255 775 690 768', url: 'https://wa.me/255775690768' },
+    { icon: '◎',  label: 'Instagram', value: '@teshier6', url: 'https://www.instagram.com/teshier6' },
     { icon: '✉',  label: 'Email',     value: 'Add in site.config.js', url: '' },
-    { icon: 'in', label: 'LinkedIn',  value: 'Add in site.config.js', url: '' },
-    { icon: '◎',  label: 'Instagram', value: 'Add in site.config.js', url: '' }
+    { icon: 'in', label: 'LinkedIn',  value: 'Add in site.config.js', url: '' }
   ],
 
   button: { text: 'Continue', goesTo: 'outro' }
