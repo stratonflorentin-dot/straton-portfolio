@@ -173,7 +173,7 @@ body { display: grid; place-items: center; }
   position: absolute; left: 3.4cqw; top: 36cqh; z-index: 12; width: 23cqw;
 }
 .menu-hl {
-  position: absolute; left: 0; width: 100%; z-index: -1;
+  position: absolute; top: 0; left: 0; width: 100%; z-index: -1;
   background: linear-gradient(90deg,
     var(--accent) 0%,
     color-mix(in srgb, var(--accent) 55%, transparent) 76%,
